@@ -1,0 +1,26 @@
+.viewContainer {
+
+  .viewTitle {
+    text-align: center;
+    background-color: bisque;
+    padding: 15px;
+  }
+
+  .userViewBlock {
+    text-align: center;
+    padding: 20px;
+
+    h4 {
+      padding: 10px;
+    }
+
+    button {
+      padding: 7px 30px;
+      background-color: bisque;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  }
+  
+}

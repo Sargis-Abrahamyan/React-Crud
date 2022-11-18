@@ -1,0 +1,13 @@
+.searchInput {
+  max-width: 245px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 8px;
+  border: none;
+  outline: none;
+  
+  &::placeholder {
+    color: black;
+  }
+
+}

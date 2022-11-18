@@ -1,0 +1,91 @@
+$borderColor: dodgerblue;
+$tableBorderColor: darkred;
+$colorTitle : black;
+$tdBorderColor: gainsboro;
+$deleteicon: red;
+$editIcon: rgb(244, 202, 22);
+$viewIcon : rgb(51, 167, 190);
+
+table {
+  width: 100%;
+  max-width: 870px;
+  margin: 7px auto;
+  border-collapse: collapse;
+
+  thead tr th {
+    color: $colorTitle;
+    padding: 8px;
+    text-align: center;
+    font-size: 17px;
+    border-bottom: 3px solid $tableBorderColor;
+    font-weight: 700;
+  }
+
+  td {
+    text-align: center;
+    color: $colorTitle;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 0;
+    border-bottom: 2px solid $tdBorderColor;
+  }
+
+  .editUser {
+    margin: 0px 9px;
+    i {
+      color: $editIcon;
+    }
+  }
+
+  .viewUserLink {
+    i {
+      color: $viewIcon;
+    }
+  }
+
+  .deleteUserBtn {
+    border: none;
+    padding: 5px;
+    background: transparent;
+  }
+
+  i {
+    color: $deleteicon;
+    background: none;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 766px) {
+  table {
+    max-width: 600px;
+
+    td {
+      font-size: 10px;
+    }
+    .editUser {
+      margin: 0px 3px;
+      i {
+        color: $editIcon;
+      }
+    }
+    i {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 566px) {
+  table {
+    max-width: 435px;
+
+    thead tr th {
+      font-size: 10px;
+    }
+
+    td {
+      font-size: 6px;
+    }
+  }
+}

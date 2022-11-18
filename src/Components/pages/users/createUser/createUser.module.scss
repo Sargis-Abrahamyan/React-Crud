@@ -1,0 +1,63 @@
+$whiteColor : #fff;
+$blackColor : black;
+$hoverColor : lightgray;
+
+.createUserContainer {
+  background-color: $blackColor;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+
+  h1 {
+    color:  $whiteColor;
+    font-weight: bold;
+  }
+  .addBtnUser {
+    width: 170px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: $whiteColor;
+    color: $blackColor;
+    font-weight: 700;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      padding: 4px;
+    }
+    &:hover {
+      background-color: $hoverColor;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .createUserContainer {
+
+    .addBtnUser {
+      width: 142px;
+      padding: 8px;
+    }
+    
+  }
+}
+@media (max-width: 760px) {
+
+  .createUserContainer {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 14px;
+    h1 {
+      padding: 12px;
+    }
+
+    .addBtnUser {
+      margin: 20px;
+    }
+
+  }
+}
