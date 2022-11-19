@@ -5,7 +5,6 @@ export const usersApi = createAsyncThunk("users", async () => {
   const response = await axios.get(
     "https://jsonplaceholder.typicode.com/users"
   );
-
   return JSON.parse(localStorage.getItem("user")) || response.data;
 });
 
@@ -33,10 +32,10 @@ export const usersDelete = createAsyncThunk(
       const response = await axios.delete(
         `https://jsonplaceholder.typicode.com/usersid/${id}`
       );
-
       if (response.status !== 200) new Error("delete task servers Error");
       dispatch(removeUsers(id));
-    } catch (e) {
+    } 
+    catch (e) {
       return rejectWithValue(e.message);
     }
   }
@@ -124,7 +123,7 @@ const usersSlice = createSlice({
         }
         return item;
       });
-
+      
       localStorage.setItem("user", JSON.stringify(state.user));
     },
 
