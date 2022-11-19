@@ -21,7 +21,6 @@ function App() {
 
   return (
     <div className="App">
-
       <Routes>
         <Route path="/" element={<UsersItem infoUsers={infoUsers} />} />
         <Route path="/users/add" element={<AddUser />} />
