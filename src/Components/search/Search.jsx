@@ -1,6 +1,6 @@
 import { useRef } from "react";
-
 import { useDispatch } from "react-redux";
+
 import { searchUser } from "../../redux/createSlice/createSlice";
 import styles from "./search.module.scss";
 
