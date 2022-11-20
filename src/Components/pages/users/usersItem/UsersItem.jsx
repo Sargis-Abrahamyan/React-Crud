@@ -1,7 +1,7 @@
 import React from "react";
-
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink as Link } from "react-router-dom";
+
 import { removeUsers } from "../../../../redux/createSlice/createSlice";
 import Loader from "../../../loader/Loader";
 import CreateUser from "../createUser/CreateUser";
@@ -14,7 +14,6 @@ function UsersItem({ infoUsers }) {
   return !loading ? (
     <>
       <CreateUser />
-
       <table>
         <thead>
           <tr>
