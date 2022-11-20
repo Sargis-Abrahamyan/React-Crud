@@ -1,17 +1,15 @@
 import { useState } from "react";
-
 import { useDispatch } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
+
 import { usersEdit } from "../../../../redux/createSlice/createSlice";
 import styles from "./editUser.module.scss";
 
 const EditUser = ({ infoUsers }) => {
-
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { id } = useParams();
   const existingUser = infoUsers.find((user) => user.id === Number(id));
-
   const { name, username, email, phone } = existingUser;
 
   const [user, setUser] = useState({
