@@ -1,12 +1,12 @@
 import React from "react";
-
 import { useParams, useNavigate } from "react-router-dom";
+
 import styles from "./view.module.scss"
 
 const View = ({ infoUsers }) => {
   const { id } = useParams();
   const navigate = useNavigate();
-
+  
   const userView = infoUsers.find((i) => i.id === Number(id));
 
   return (
