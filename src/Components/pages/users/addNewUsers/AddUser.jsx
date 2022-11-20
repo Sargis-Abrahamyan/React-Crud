@@ -1,7 +1,7 @@
 import { useState } from "react";
-
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+
 import { addUserItem } from "../../../../redux/createSlice/createSlice";
 import styles from "./addUser.module.scss";
 
@@ -22,7 +22,7 @@ const AddUser = () => {
   
   const handelAdd = (e) => {
     e.preventDefault();
-
+    
     if (user.name.length < 3) {
       return alert(`Name must be longer than 3 letters`)
     }
