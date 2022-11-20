@@ -1,6 +1,6 @@
 import React from "react";
-
 import { useNavigate } from "react-router-dom";
+
 import Search from "../../../search/Search";
 import styles from "./createUser.module.scss";
 
@@ -9,7 +9,6 @@ const CreateUser = () => {
 
   return (
     <div className={styles.createUserContainer}>
-
       <h1>CRUD</h1>
 
       <Search />
