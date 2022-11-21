@@ -30,7 +30,6 @@ function UsersItem({ infoUsers }) {
           infoUsers.map((user) => (
             <tbody key={user.id}>
               <tr>
-
                 <td>{user.id}</td>
                 <td>{user.name}</td>
                 <td>{user.username}</td>
