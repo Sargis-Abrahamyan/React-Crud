@@ -37,16 +37,16 @@ const = UsersItem({ infoUsers }) => {
                 <td>{user.email}</td>
                 <td>
                   <Link
-                    className={styles.viewUserLink}
                     to={"/users/" + user.id}
+                    className={styles.viewUserLink}
                     title="View"
                   >
                     <i className="fa-sharp fa-solid fa-street-view"></i>
                   </Link>
 
                   <Link
-                    className={styles.editUser}
                     to={`edit-user/${user.id}`}
+                    className={styles.editUser}
                     title="Edit"
                   >
                     <i className="fas fa-edit"></i>
