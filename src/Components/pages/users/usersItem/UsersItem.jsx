@@ -7,7 +7,7 @@ import Loader from "../../../loader/Loader";
 import CreateUser from "../createUser/CreateUser";
 import styles from "./userItem.module.scss";
 
-function UsersItem({ infoUsers }) {
+const = UsersItem({ infoUsers }) => {
   const loading = useSelector((state) => state.users.loader);
   const dispatch = useDispatch();
 
