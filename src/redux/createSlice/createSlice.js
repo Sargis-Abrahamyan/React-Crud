@@ -163,5 +163,4 @@ const usersSlice = createSlice({
 });
 
 export default usersSlice.reducer;
-
 export const { addUsers, removeUsers, editUsers, viewUsers, searchUser } = usersSlice.actions;
