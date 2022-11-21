@@ -91,7 +91,8 @@ export const usersEdit = createAsyncThunk(
 
       if (response.status === 200) new Error("Edit task servers Error");
       dispatch(editUsers(edit));
-    } catch (e) {
+    } 
+    catch (e) {
       return rejectWithValue(e.message);
     }
   }
