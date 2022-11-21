@@ -37,7 +37,6 @@ function UsersItem({ infoUsers }) {
                 <td>{user.phone}</td>
                 <td>{user.email}</td>
                 <td>
-
                   <Link
                     className={styles.viewUserLink}
                     to={"/users/" + user.id}
@@ -53,7 +52,7 @@ function UsersItem({ infoUsers }) {
                   >
                     <i className="fas fa-edit"></i>
                   </Link>
-
+                  
                   <button
                     className={styles.deleteUserBtn}
                     onClick={() => dispatch(removeUsers(user.id))}
